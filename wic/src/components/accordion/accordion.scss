@@ -1,0 +1,22 @@
+.accordion {
+  &_title {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+  }
+
+  &.active &_title {
+    color: black;
+  }
+
+  &_content {
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+  }
+
+  &.active &_content {
+    color: skyblue;
+    max-height: 0em;
+  }
+}
