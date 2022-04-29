@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Baroque = () => {
   return (
@@ -17,6 +17,7 @@ const Baroque = () => {
           <Link to="/baroque/vivaldi">비발디</Link>
         </li>
       </ul>
+      <Outlet />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Claussicus = () => {
   return (
@@ -14,6 +14,7 @@ const Claussicus = () => {
           <Link to="/claussicus/beethoven">베토벤</Link>
         </li>
       </ul>
+      <Outlet />
     </div>
   );
 };

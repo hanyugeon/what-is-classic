@@ -1,11 +1,11 @@
 import React from "react";
 
-const Chopin = () => {
+const Bach = () => {
   return (
     <div>
-      <h3>쇼팽</h3>
+      <h3>바흐</h3>
     </div>
   );
 };
 
-export default Chopin;
+export default Bach;
