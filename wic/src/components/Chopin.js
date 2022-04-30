@@ -3,12 +3,26 @@ import Accordion from "./accordion/Accordion";
 
 const data = [
   {
+    title: "에튀드",
+    content: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/G10qXpF3cqI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    ),
+  },
+  {
     title: "녹턴",
     content: (
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/tSAwZP8e-zQ"
+        src="https://www.youtube.com/embed/QR10Od1cLaM"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -22,7 +36,7 @@ const data = [
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/OCUSalQf-jY"
+        src="https://www.youtube.com/embed/S94Nh-bSomo"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -31,12 +45,26 @@ const data = [
     ),
   },
   {
-    title: "콘체르토",
+    title: "피아노 콘체르토",
     content: (
       <iframe
         width="560"
         height="315"
         src="https://www.youtube.com/embed/614oSsDS734"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    ),
+  },
+  {
+    title: "발라드",
+    content: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/pe-GrRQz8pk"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
