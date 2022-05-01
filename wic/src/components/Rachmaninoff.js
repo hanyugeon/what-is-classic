@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import Accordion from "./accordion/Accordion";
 
 const data = [
@@ -13,7 +14,7 @@ const data = [
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe>
+      />
     ),
   },
   {
@@ -27,21 +28,35 @@ const data = [
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe>
+      />
     ),
   },
 ];
 
+const StyledContent = styled.div`
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  overflow: hidden;
+`;
+
+const StyledAccordion = styled.div`
+  background: #c8a2c8;
+  border-radius: 0.5rem;
+  border-top: 1.5px solid #a28dc8;
+`;
+
 const Rachmaninoff = () => {
   return (
-    <div>
-      <h3>라흐마니노프</h3>
+    <StyledContent>
+      <h2>라흐마니노프</h2>
       {data.map((item, index) => (
-        <div key={index}>
+        <StyledAccordion key={index}>
           <Accordion title={item.title} content={item.content} />
-        </div>
+        </StyledAccordion>
       ))}
-    </div>
+    </StyledContent>
   );
 };
 
