@@ -1,23 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Header.scss";
+import styled from "styled-components";
+
+const StyledHeader = styled.div`
+  background: #8d67c8;
+  height: 4rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Title = styled(Link)`
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  color: black;
+  text-decoration: none;
+`;
+
+const Nav = styled(Link)`
+  align-items: center;
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  display: flex;
+  border-left: 5px solid #c8a2c8;
+  color: black;
+  text-decoration: none;
+`;
 
 const Header = () => {
   return (
-    <div className="header">
-      <Link to="/" className="title">
-        What Is Classic
-      </Link>
-      <Link to="/baroque" className="nav">
-        바로크 음악
-      </Link>
-      <Link to="/claussicus" className="nav">
-        고전주의
-      </Link>
-      <Link to="/romanticism" className="nav">
-        낭만주의
-      </Link>
-    </div>
+    <StyledHeader>
+      <Title to="/">What is classic</Title>
+      <Nav to="/baroque">바로크 음악</Nav>
+      <Nav to="/claussicus">고전주의</Nav>
+      <Nav to="/romanticism">낭만주의</Nav>
+    </StyledHeader>
   );
 };
 
