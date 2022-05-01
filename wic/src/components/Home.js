@@ -1,9 +1,16 @@
 import React from "react";
-import "./Home.scss";
+import styled from "styled-components";
+
+const StyledCategory = styled.div`
+  background: #a28dc8;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+`;
 
 const Home = () => {
   return (
-    <div className="home">
+    <StyledCategory>
       <h2>What Is Classic, 클래식이란 무엇일까요?</h2>
       <h3>클래식은 배워야만 하는걸까요?</h3>
       <p>제 대답은 "아닙니다".</p>
@@ -17,7 +24,7 @@ const Home = () => {
       <h3>당신은 클래식과 친한가요?</h3>
       <p>괜찮아요, 지금부터 친해지면 된답니다!</p>
       <p>지금부터 흥미로워 보이는 메뉴 아무곳에나 들어가 보세요.</p>
-    </div>
+    </StyledCategory>
   );
 };
 

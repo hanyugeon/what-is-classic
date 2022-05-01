@@ -1,10 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Outlet } from "../../node_modules/react-router-dom/index";
+import { Outlet, Link } from "react-router-dom";
+import styled from "styled-components";
+
+const StyledCategory = styled.div`
+  background: #a28dc8;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+`;
 
 const Romanticism = () => {
   return (
-    <div>
+    <StyledCategory>
       <h2>낭만주의</h2>
       <p>낭만주의 작곡가들이에요.</p>
       <ul>
@@ -19,7 +26,7 @@ const Romanticism = () => {
         </li>
       </ul>
       <Outlet />
-    </div>
+    </StyledCategory>
   );
 };
 

@@ -1,9 +1,17 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import styled from "styled-components";
+
+const StyledCategory = styled.div`
+  background: #a28dc8;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+`;
 
 const Claussicus = () => {
   return (
-    <div>
+    <StyledCategory>
       <h2>고전주의</h2>
       <p>고전주의 작곡가들이에요.</p>
       <ul>
@@ -15,7 +23,7 @@ const Claussicus = () => {
         </li>
       </ul>
       <Outlet />
-    </div>
+    </StyledCategory>
   );
 };
 

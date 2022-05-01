@@ -1,9 +1,17 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import styled from "styled-components";
+
+const StyledCategory = styled.div`
+  background: #a28dc8;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+`;
 
 const Baroque = () => {
   return (
-    <div>
+    <StyledCategory>
       <h2>바로크 음악</h2>
       <p>바로크 음악 작곡가들이에요.</p>
       <ul>
@@ -18,7 +26,7 @@ const Baroque = () => {
         </li>
       </ul>
       <Outlet />
-    </div>
+    </StyledCategory>
   );
 };
 
