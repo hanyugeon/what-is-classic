@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledCategory = styled.div`
-  background: #a28dc8;
+  background: #c8c8c8;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;

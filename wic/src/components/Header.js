@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledHeader = styled.div`
-  background: #8d67c8;
+  background: #323232;
   height: 4rem;
   font-size: 1.5rem;
   display: flex;
@@ -12,21 +12,21 @@ const StyledHeader = styled.div`
 `;
 
 const Title = styled(Link)`
+  color: #dcdcdc;
   align-items: center;
   text-align: center;
   flex: 1;
-  color: black;
   text-decoration: none;
 `;
 
 const Nav = styled(Link)`
+  color: #dcdcdc;
   align-items: center;
   text-align: center;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
   display: flex;
-  border-left: 5px solid #c8a2c8;
-  color: black;
+  border-left: 5px solid #505050;
   text-decoration: none;
 `;
 

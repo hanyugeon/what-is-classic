@@ -78,9 +78,9 @@ const StyledContent = styled.div`
 `;
 
 const StyledAccordion = styled.div`
-  background: #c8a2c8;
+  background: #969696;
   border-radius: 0.5rem;
-  border-top: 1.5px solid #a28dc8;
+  border-top: 1.5px solid #c8c8c8;
 `;
 
 const Vivaldi = () => {
